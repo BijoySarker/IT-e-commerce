@@ -14,6 +14,12 @@ class ContactController extends Controller
         return view('frontend.contact');
     }
 
+    public function Dashboard()
+    {
+        $contacts = Contact::latest()->take(10)->get();
+        return view('admin.index', compact('contacts'));
+    }
+
     public function StoreMessage(Request $request)
     {
 

@@ -4,12 +4,12 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Dashboard | Upcube - Admin & Dashboard Template</title>
+        <title>Protfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.ico') }}">
+        <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}">
 
         <!-- jquery.vectormap css -->
         <link href="{{ asset('backend/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css') }}" rel="stylesheet" type="text/css" />
@@ -69,6 +69,22 @@
         <div class="rightbar-overlay"></div>
 
         <!-- JAVASCRIPT -->
+        <script>
+            let logoutTimer;
+
+            function resetTimer() {
+                clearTimeout(logoutTimer);
+                logoutTimer = setTimeout(() => {
+                    window.location.href = "{{ route('login') }}";
+                }, 2 * 60 * 60 * 1000);
+            }
+
+            window.onload = resetTimer;
+            document.onmousemove = resetTimer;
+            document.onkeypress = resetTimer;
+            document.onclick = resetTimer;
+        </script>
+
         <script src="{{ asset('backend/assets/libs/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('backend/assets/libs/metismenu/metisMenu.min.js') }}"></script>
@@ -117,13 +133,10 @@
                     }
             @endif 
         </script>
-
-
         <!--tinymce js-->
         <script src="{{ asset('backend/assets/libs/tinymce/tinymce.min.js') }} "></script>
         <!-- init js -->
         <script src="{{ asset('backend/assets/js/pages/form-editor.init.js') }} "></script>
-
         
     </body>
 

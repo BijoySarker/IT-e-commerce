@@ -9,7 +9,7 @@
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{asset('backend/assets/images/favicon.ico') }}">
+        <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}">
 
         <!-- Bootstrap Css -->
         <link href="{{asset('backend/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -32,8 +32,8 @@
                         <div class="text-center mt-4">
                             <div class="mb-3">
                                 <a href="index.html" class="auth-logo">
-                                    <img src="{{asset('logo/logo.jpg')}}" height="60" class="logo-dark mx-auto" alt="">
-                                    <img src="{{asset('logo/logo.jpg')}}" height="60" class="logo-light mx-auto" alt="">
+                                    <img src="{{asset('logo/logo.png')}}" height="60" class="logo-dark mx-auto" alt="">
+                                    <img src="{{asset('logo/logo.png')}}" height="60" class="logo-light mx-auto" alt="">
                                 </a>
                             </div>
                         </div>

@@ -24,30 +24,24 @@
                     <form method="post" action="{{ route('store.message') }}" class="contact__form">
                         @csrf
                         <div class="row g-3">
-                            <!-- Name Input -->
                             <div class="col-md-6">
-                                <input name="name" type="text" class="form-control" placeholder="Enter Your Name*" aria-label="Name" required>
+                                <input name="name" type="text" class="form-control" placeholder="Enter Your Name*" required>
                             </div>
-                            <!-- Email Input -->
                             <div class="col-md-6">
-                                <input name="email" type="email" class="form-control" placeholder="Enter Your Email*" aria-label="Email" required>
+                                <input name="email" type="email" class="form-control" placeholder="Enter Your Email*" required>
                             </div>
-                            <!-- Subject Input -->
                             <div class="col-md-6">
-                                <input name="subject" type="text" class="form-control" placeholder="Enter Subject*" aria-label="Subject" required>
+                                <input name="subject" type="text" class="form-control" placeholder="Enter Subject*" required>
                             </div>
-                            <!-- Phone Input -->
                             <div class="col-md-6">
-                                <input name="phone" type="text" class="form-control" placeholder="Enter Your Phone*" aria-label="Phone" required>
+                                <input name="phone" type="text" class="form-control" placeholder="Enter Your Phone*" required>
                             </div>
                         </div>
-                        <!-- Message Input -->
                         <div class="mt-3">
-                            <textarea name="message" id="message" class="form-control" placeholder="Enter Your Message*" rows="5" aria-label="Message" required></textarea>
+                            <textarea name="message" id="message" class="form-control" placeholder="Enter Your Message*" rows="5" required></textarea>
                         </div>
-                        <!-- Submit Button -->
                         <div class="text-center mt-4">
-                            <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+                            <button type="submit" class="btn btn-primary px-5 py-2">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -60,7 +54,6 @@
     <section class="contact-info-area py-5">
         <div class="container">
             <div class="row justify-content-center g-4">
-                <!-- Address Info -->
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="contact__info">
                         <div class="contact__info__icon mb-3">
@@ -72,7 +65,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Phone Info -->
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="contact__info">
                         <div class="contact__info__icon mb-3">
@@ -84,7 +76,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Email Info -->
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="contact__info">
                         <div class="contact__info__icon mb-3">

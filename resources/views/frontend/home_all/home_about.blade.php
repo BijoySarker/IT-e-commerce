@@ -39,7 +39,7 @@ $aboutpage = App\Models\About::find(1);
     <div class="col-lg-6">
     <div class="about__content">
     <div class="section__title">
-    <span class="sub-title">01 - About me</span>
+    <span class="sub-title">About me</span>
     <h2 class="title">{{ $aboutpage->title }}</h2>
     </div>
     <div class="about__exp">
@@ -51,7 +51,7 @@ $aboutpage = App\Models\About::find(1);
     </div>
     </div>
     <p class="desc">{{ $aboutpage->short_description }}</p>
-    <a href="about.html" class="btn">Download my resume</a>
+    <a href="upload/resume/Bijoy_Sarker_Resume.pdf" class="btn btn-primary" download="Bijoy_Sarker_Resume.pdf">Download my resume</a>
     </div>
     </div>
     </div>
